@@ -19,6 +19,8 @@ public class AhorcadoProgramacion {
 		boolean ganaste = false;
 		boolean perdiste = false;
 		boolean letraAcertada = false;
+		boolean hasGanado=false;
+		
 
 		/* Declaramos la letra elegida (de la " a " a la " z ") */
 		char letraElegida = '-';
@@ -69,16 +71,36 @@ public class AhorcadoProgramacion {
 			if (letraAcertada) {
 
 				System.out.println("Tu palabra secreta contiene la letra " + letraElegida);
+				
+				if(!Metodo.hayGuion(palabraGuion)) {
+					
+					acaboJuego=true;
+					
+				}
 
 			} else {
 				System.out.println("No has acertado la letra secreta");
 				Metodo.dibujoAhorcado(intentos);
 				intentos--;
+				
+				if(intentos<0) {
+					acaboJuego=true;
+				}
 			}
 			
 			letraAcertada = false;
+			
+			
 
 		} while (!acaboJuego);
+		
+	if(intentos<0) {
+		
+		System.out.println("*******************************");
+		
+		System.out.println("Arturo Pérez Reverte te ha ahorcado porque no has adivinado la palabra ");
+		
+	}
 
 	}
 

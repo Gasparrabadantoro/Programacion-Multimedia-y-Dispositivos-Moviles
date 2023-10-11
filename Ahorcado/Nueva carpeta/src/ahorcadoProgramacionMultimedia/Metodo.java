@@ -68,5 +68,16 @@ public class Metodo {
 			break;
 		}
 	}
+	
+	static boolean hayGuion(char array[]) {
+		
+		for (int i = 0; i < array.length; i++) {
+			
+			if(array[i]=='-')return true;
+			
+		}
+		
+		return false;
+	}
 
 }

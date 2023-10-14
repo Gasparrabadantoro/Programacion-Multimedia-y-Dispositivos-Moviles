@@ -1,75 +1,133 @@
 package ahorcadoProgramacionMultimedia;
 
+import javax.swing.JLabel;
+
 public class Metodo {
-	public static void dibujoAhorcado(int contadorNumero) {
+	public static void dibujoAhorcado(int contadorNumero, JLabel ahorcado) {
 		switch (contadorNumero) {
 		case 6:
-			System.out.println(" ____");
+			ahorcado.setText("<html><body>&nbsp;____ <br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>"
+					+ "|<br>"
+					+ "|<br>"
+					+ "|<br>"
+					+ "|<br>"
+					+ "|____"
+					+ "</body></html>");
+			/*System.out.println(" ____");
 			System.out.println("|       |");
 			System.out.println("|");
 			System.out.println("|");
 			System.out.println("|");
 			System.out.println("|");
-			System.out.println("|____");
+			System.out.println("|____");*/
 			break;
 		case 5:
-			System.out.println(" ____");
+			ahorcado.setText("<html><body>&nbsp;____ <br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O<br>"
+					+ "|<br>"
+					+ "|<br>"
+					+ "|<br>"
+					+ "|____"
+					+ "</body></html>");
+			/*System.out.println(" ____");
 			System.out.println("|       |");
 			System.out.println("|       O");
 			System.out.println("|");
 			System.out.println("|");
 			System.out.println("|");
-			System.out.println("|____");
+			System.out.println("|____");*/
 			break;
 		case 4:
-			System.out.println(" ____");
+			ahorcado.setText("<html><body>&nbsp;____ <br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>"
+					+ "|<br>"
+					+ "|<br>"
+					+ "|____"
+					+ "</body></html>");
+			/*System.out.println(" ____");
 			System.out.println("|       |");
 			System.out.println("|       O");
 			System.out.println("|       |");
 			System.out.println("|");
 			System.out.println("|");
-			System.out.println("|____");
+			System.out.println("|____");*/
 			break;
 		case 3:
-			System.out.println(" ____");
+			ahorcado.setText("<html><body>&nbsp;____ <br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/|<br>"
+					+ "|<br>"
+					+ "|<br>"
+					+ "|____"
+					+ "</body></html>");
+			/*System.out.println(" ____");
 			System.out.println("|       |");
 			System.out.println("|       O");
 			System.out.println("|      /|");
 			System.out.println("|");
 			System.out.println("|");
-			System.out.println("|____");
+			System.out.println("|____");*/
 			break;
 		case 2:
-			System.out.println(" ____");
+			ahorcado.setText("<html><body>&nbsp;____ <br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/|\\<br>"
+					+ "|<br>"
+					+ "|<br>"
+					+ "|____"
+					+ "</body></html>");
+			/*System.out.println(" ____");
 			System.out.println("|       |");
 			System.out.println("|       O");
 			System.out.println("|      /|\\");
 			System.out.println("|");
 			System.out.println("|");
-			System.out.println("|____");
+			System.out.println("|____");*/
 			break;
 		case 1:
-			System.out.println(" ____");
+			ahorcado.setText("<html><body>&nbsp;____ <br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/|\\<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<br>"
+					+ "|<br>"
+					+ "|____"
+					+ "</body></html>");
+			/*System.out.println(" ____");
 			System.out.println("|       |");
 			System.out.println("|       O");
 			System.out.println("|      /|\\");
 			System.out.println("|      /");
 			System.out.println("|");
-			System.out.println("|____");
+			System.out.println("|____");*/
 			break;
 		case 0:
-			System.out.println(" ____");
+			ahorcado.setText("<html><body>&nbsp;____ <br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/|\\<br>"
+					+ "|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;<\\<br>"
+					+ "|<br>"
+					+ "|____"
+					+ "</body></html>");
+			/*System.out.println(" ____");
 			System.out.println("|       |");
 			System.out.println("|       O");
 			System.out.println("|      /|\\");
 			System.out.println("|      / \\");
 			System.out.println("|");
-			System.out.println("|____");
+			System.out.println("|____");*/
 			break;
 		}
 	}
 	
-	static boolean hayGuion(char array[]) {
+	public static boolean hayGuion(char array[]) {
 		
 		for (int i = 0; i < array.length; i++) {
 			
